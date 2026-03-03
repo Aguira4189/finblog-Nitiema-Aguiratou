@@ -1,26 +1,154 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@plugin "daisyui" {
+  themes: dark --default;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131722;
+  color: #d1d4dc;
+}
+
+/* COULEUR PRINCIPALE - BLEU TRADINGVIEW */
+.text-yellow-400 {
+  color: #2962ff !important;
+}
+
+.text-yellow-400\/30 {
+  color: rgba(41, 98, 255, 0.3) !important;
+}
+
+/* BOUTONS */
+.btn-warning {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: white !important;
+}
+
+.btn-warning:hover {
+  background-color: #1a4fd6 !important;
+}
+
+/* BADGES */
+.badge-warning {
+  background-color: #2962ff !important;
+  border-color: #2962ff !important;
+  color: white !important;
+}
+
+/* BORDURES */
+.border-yellow-400 {
+  border-color: #2962ff !important;
+}
+
+.border-b-2 {
+  border-color: #2962ff !important;
+}
+
+/* BACKGROUNDS */
+.bg-yellow-400 {
+  background-color: #2962ff !important;
+  color: white !important;
+}
+
+/* NAVBAR */
+.bg-neutral {
+  background-color: #1e222d !important;
+}
+
+/* HAUSSE / BAISSE */
+.text-green-400 {
+  color: #26a69a !important;
+}
+
+.text-red-400 {
+  color: #ef5350 !important;
+}
+
+.badge-success {
+  background-color: rgba(38, 166, 154, 0.15) !important;
+  color: #26a69a !important;
+  border-color: #26a69a !important;
+}
+
+.badge-error {
+  background-color: rgba(239, 83, 80, 0.15) !important;
+  color: #ef5350 !important;
+  border-color: #ef5350 !important;
+}
+
+/* CARDS */
+.card {
+  background-color: #1e222d !important;
+  border-color: #2a2e39 !important;
+}
+
+/* BASE */
+.bg-base-100 {
+  background-color: #1e222d !important;
+}
+
+.bg-base-200 {
+  background-color: #131722 !important;
+}
+
+.bg-base-300 {
+  background-color: #2a2e39 !important;
+}
+
+.border-base-300 {
+  border-color: #2a2e39 !important;
+}
+
+.text-base-content {
+  color: #d1d4dc !important;
+}
+
+/* INPUTS */
+.input, .select, .textarea {
+  background-color: #1e222d !important;
+  border-color: #2a2e39 !important;
+  color: #d1d4dc !important;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: #2962ff !important;
+  outline: none !important;
+}
+
+/* TABLE */
+.table {
+  background-color: #1e222d !important;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131722;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2962ff;
+}
+.text-base-content\/50 {
+  color: rgba(209, 212, 220, 0.7) !important;
+}
+
+.text-base-content\/40 {
+  color: rgba(209, 212, 220, 0.6) !important;
+}
+
+.text-base-content\/60 {
+  color: rgba(209, 212, 220, 0.8) !important;
+}
+
+.text-base-content\/70 {
+  color: rgba(209, 212, 220, 0.85) !important;
 }
